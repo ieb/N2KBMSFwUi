@@ -1,6 +1,9 @@
-# On device UI
+# N2KNMEA0183Wifi BMS Firmware UI
 
-Basic UI for the BMs minimizing dependencies as there is limited flash available on the device. Although it is configured to be a PWA, at the moment it wont install on as a PWA service since that would require a large image which is a waste of flash. Most of the code is shared with the lifepo4 PWA, however D3JS has been optimised and the ui is reactive so it works on Android and can be installed on a home screen for quickaccess.
+This is a UI for https://github.com/ieb/N2KNMEA0183Wifi which is uploaded to the device Firmware to give quick access on http://bloatsystems.local to monitor the BMS that the device is connected to. It was forked from https://github.com/ieb/N2KLifePo4 which is an install-able PWA App and which may evolve beyond what cna reasonably be accommodated in Flash. This version has a service worker as is required by a PWA, however due so size limitations the PWA manifest is lacking some images that cause Chrome to refuse to install.
+
+
+Most of the code is shared with the lifepo4 PWA, however D3JS has been optimized and the ui is reactive so it works on Android and can be installed on a home screen for quickaccess.
 
 
 # Install into Flash
